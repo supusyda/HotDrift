@@ -3,10 +3,12 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    CarController carController;
+    [SerializeField] FixedJoystick fixedJoystick;
+    CarController _carController;
+
     void Start()
     {
-        carController = GetComponent<CarController>();
+        _carController = GetComponent<CarController>();
     }
 
     void Update()
@@ -14,7 +16,7 @@ public class PlayerController : MonoBehaviour
         // Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         // Plane plane = new Plane(Vector3.up, transform.position); // Assuming the object is on a horizontal plane
         // float distance;
-        Vector3 movingDir = transform.forward;
+        // Vector3 movingDir = transform.forward;
         // if (plane.Raycast(ray, out distance))
         // {
         //     Vector3 mouseWorldPos = ray.GetPoint(distance); // Get mouse world position
@@ -26,7 +28,8 @@ public class PlayerController : MonoBehaviour
 
 
         // }
-        carController.MovingCar(movingDir);
+        Vector3 joyDir = new Vector3(fixedJoystick.Horizontal, 0, fixedJoystick.Vertical);
+        _carController.MovingCar(joyDir.normalized);
 
     }
 }

@@ -1,0 +1,21 @@
+report@config:load 6.55
+Authorized using stored user info.
+report@account:authorize 18.54
+stderr: 'rm' is not recognized as an internal or external command,
+operable program or batch file.
+
+Exporting assets from Unity....
+
+Error: System.ArrayTypeMismatchException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Attempted to access an element as a type incompatible with the array.
+  at (wrapper stelemref) System.Object.virt_stelemref_interface(intptr,object)
+  at System.Collections.Generic.List`1[T].AddWithResize (T item) [0x00019] in <321eb2db7c6d43ea8fc39b54eaca3452>:0 
+  at System.Collections.Generic.List`1[T].Add (T item) [0x00034] in <321eb2db7c6d43ea8fc39b54eaca3452>:0 
+  at â€ƒ.â€ƒâ€”.Â [Â ] (â€€.â€€â€©`1[Â ] ) [0x00043] in <c74e6a5315a84c429fb27feef53ebf7d>:0 
+  at â€‚.â€‚â¡.Â [Â ] (â€€.â€€â€©`1[Â ] ) [0x00000] in <c74e6a5315a84c429fb27feef53ebf7d>:0 
+  at â€„.â€„â€¬..ctor (â€‚.â€‚â¡ ) [0x00012] in <c74e6a5315a84c429fb27feef53ebf7d>:0 
+  at â€‚.â€‚â¡..ctor (â€€.â€€â€“ , System.Boolean ) [0x0014a] in <c74e6a5315a84c429fb27feef53ebf7d>:0 
+  at â€€.â€€â€”.á€ () [0x00038] in <c74e6a5315a84c429fb27feef53ebf7d>:0 
+Caused By: 
+Error: Exceptions was thrown!
+    at _0x4be061.action (D:\6.2.1\pipeline\Jakefile.js:6:3019198)

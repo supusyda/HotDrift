@@ -163,6 +163,12 @@
       },
       "url": "https://packages.unity.com"
     },
+    "uk.lunalabs.luna": {
+      "version": "file:D:/6.2.1/scripts",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {}
+    },
     "com.unity.modules.accessibility": {
       "version": "1.0.0",
       "depth": 0,
