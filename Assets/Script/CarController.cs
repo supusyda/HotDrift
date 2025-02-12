@@ -1,32 +1,50 @@
 using System.Collections.Generic;
-using Unity.Mathematics;
+using DG.Tweening;
 using UnityEngine;
 
 
 public class CarController : MonoBehaviour
 {
+    [SerializeField] private CarAudio carAudio;
+    [SerializeField] private CarData NormalPlayerCarData;
+    [SerializeField] private CarData AICarData;
+
+
     public SphereCollider sphereCollider;
     public Rigidbody sphereRB;
     public bool isDriffing = false;
     public Transform CarBody;
     [Header("Parameters")]
 
-    public CarData carData;
+    public static bool CanMove = false;
+    // public CarData carData;
+    public float Gravity = 0;
+
+
+    [SerializeField]
+    public float MaxSpeed = 0;
+
+
+
+    public float MaxAngleToDrift = 0;
 
 
 
 
+    public float MaxSteerAngle = 0;
 
 
 
+    [SerializeField]
+    public float SteerSensitivity = 0;
+    public float DriftTraction = 0;
+    public float FrictionNormal = 0;
 
+    public float DriftFriction = 0;
 
     [Header("Particles")]
     public List<Transform> wheelParticlesHolder = new List<Transform>();
     public List<Transform> trailRenderHolder = new List<Transform>();
-    public static bool CanMove = false;
-
-
 
     private float _actualRotate = 0;
     private float _actualSpeed = 0;
@@ -35,12 +53,10 @@ public class CarController : MonoBehaviour
     private float _rotate = 0;
 
     private int _steerDir = 0;// 1 right -1 left 0 none
-    private float angleOfMoveDirToVecForward = 0;//has kenectEnegy
-    private Vector3 cc3 = Vector3.zero;//has kenectEnegy
-
+    private float _angleOfMoveDirToVecForward = 0;
+    private Vector3 _driftDir = Vector3.zero;
     private List<ParticleSystem> driftParticles = new List<ParticleSystem>();
     private List<TrailRenderer> trail = new List<TrailRenderer>();
-    [SerializeField] private CarAudio carAudio;
 
 
     void Start()
@@ -57,8 +73,8 @@ public class CarController : MonoBehaviour
         {
             trail.Add(child.GetComponent<TrailRenderer>());
         }
-        _friction = carData.FrictionNormal;
-        cc3 = transform.forward;
+        _friction = FrictionNormal;
+        _driftDir = transform.forward;
         carAudio.PlaySound(carAudio.engineSound);
 
     }
@@ -68,19 +84,23 @@ public class CarController : MonoBehaviour
     }
     public void MovingCar(Vector3 movingDir)
     {
+
+        // if (Input.GetMouseButton(0)) CarBody.DOJump(transform.up, 1, 1, 1, false);
         if (!CanMove) return;
+
+
         // Move the car object to be at the same position as the sphere collider,
         // but offset by 0.5 units to be at the middle of the sphere collider
         transform.position = new Vector3(sphereCollider.transform.position.x, 0.2f, sphereCollider.transform.position.z);
 
-
+        movingDir = movingDir == Vector3.zero ? transform.forward : movingDir;
         // Vector3 fo = ;
 
         // Calculate the dot product of the direction to the mouse and the right direction
         // This will be positive if the mouse is to the right of the car, and negative if it's to the left
-        Debug.DrawLine(transform.position, transform.position + RotateVector(transform.forward, carData.MaxAngleToDrift, Vector3.up) * 10, Color.blue);
-        Debug.DrawLine(transform.position, transform.position + RotateVector(transform.forward, -carData.MaxAngleToDrift, Vector3.up) * 10, Color.blue);
-        Debug.DrawLine(transform.position, transform.position + movingDir * 10, Color.blue);
+        // Debug.DrawLine(transform.position, transform.position + RotateVector(transform.forward,  MaxAngleToDrift, Vector3.up) * 10, Color.blue);
+        // Debug.DrawLine(transform.position, transform.position + RotateVector(transform.forward, - MaxAngleToDrift, Vector3.up) * 10, Color.blue);
+        // Debug.DrawLine(transform.position, transform.position + movingDir * 10, Color.blue);
 
 
 
@@ -101,69 +121,70 @@ public class CarController : MonoBehaviour
         }
 
 
-        angleOfMoveDirToVecForward = Vector3.SignedAngle(transform.forward, movingDir, Vector3.up);
+        _angleOfMoveDirToVecForward = Vector3.SignedAngle(transform.forward, movingDir, Vector3.up);
 
-        if (!isDriffing && IsInRangeOfDrift(angleOfMoveDirToVecForward))
-        {
-            isDriffing = true;
+        CheckForDrift(_angleOfMoveDirToVecForward);
 
-            if (_steerDir > 0)
-            {
-                cc3 = (transform.forward + (-transform.right)).normalized;
-            }
-            else if (_steerDir < 0)
-            {
-                cc3 = (transform.forward + transform.right).normalized;
-            }
-        }
+        HandleDriftUpdate();
+
+        _actualRotate = Mathf.Lerp(_actualRotate, _rotate, Time.deltaTime * 3);
+        _actualSpeed = Mathf.Lerp(_actualSpeed, MaxSpeed, Time.deltaTime * 5f);
+        _rotate = 0;
+        // _speed = 0;
+        // Debug.DrawRay(transform.position, transform.forward * 3, Color.white);
+        // Debug.Log(_steerDir);
+
+    }
+    private void CheckForDrift(float angleOfMoveDirToVecForward)
+    {
+        if (isDriffing || !IsInRangeOfDrift(angleOfMoveDirToVecForward)) return;
+
+        _driftDir = _steerDir > 0 ? (transform.forward - transform.right).normalized :
+                   _steerDir < 0 ? (transform.forward + transform.right).normalized :
+                   _driftDir;
+        carAudio.PlaySound(carAudio.driftSound);
+
+        isDriffing = true;
+    }
+
+    private void HandleDriftUpdate()
+    {
+        const int driftPower = 1;
 
         if (!isDriffing)
         {
-            _rotate = this.SteerRotation(_steerDir, .5f);
+            _rotate = SteerRotation(_steerDir, .5f);
 
-            foreach (ParticleSystem p in driftParticles)
-            {
-                p.startColor = Color.red;
+            foreach (var p in driftParticles)
                 p.Stop();
-            }
-            foreach (TrailRenderer t in trail)
+
+            foreach (var t in trail)
             {
+                t.time = 0;
                 t.emitting = false;
+                t.Clear();
             }
         }
         else
         {
-            const int driftPower = 1;
-            _rotate = this.SteerRotation(_steerDir, driftPower);
-
-            foreach (ParticleSystem p in driftParticles)
+            _rotate = SteerRotation(_steerDir, driftPower);
+            foreach (var p in driftParticles)
             {
-                if (p.isPlaying == false)
+                if (!p.isPlaying)
                 {
-                    p.startColor = Color.red;
+                    var main = p.main;
+                    main.startColor = Color.red;
                     p.Play();
-
                 }
+
             }
-            foreach (TrailRenderer t in trail)
+
+            foreach (var t in trail)
             {
+                t.time = 2f;
                 t.emitting = true;
             }
-
-
-
-
         }
-
-        _actualRotate = Mathf.Lerp(_actualRotate, _rotate, Time.deltaTime * 3);
-
-
-        _rotate = 0;
-        _actualSpeed = Mathf.Lerp(_actualSpeed, carData.MaxSpeed, Time.deltaTime * 5f);
-        // _speed = 0;
-        Debug.DrawRay(transform.position, transform.forward * 3, Color.white);
-        // Debug.Log(_steerDir);
-
     }
     void FixedUpdate()
     {
@@ -171,31 +192,32 @@ public class CarController : MonoBehaviour
         // move the car
         if (isDriffing)
         {
-            Debug.DrawRay(transform.position, cc3 * 3, Color.red);
+
             _actualSpeed = Mathf.Lerp(_actualSpeed, 0, Time.deltaTime * 3f);
-            _friction = carData.DriftFriction;
+            _friction = DriftFriction;
 
-            cc3 = Vector3.Lerp(cc3.normalized, transform.forward, Time.deltaTime * carData.DriftTraction);
+            _driftDir = Vector3.Lerp(_driftDir.normalized, transform.forward, Time.deltaTime * DriftTraction);
 
-            sphereRB.AddForce(cc3 * _actualSpeed, ForceMode.Acceleration);
-            sphereRB.linearDamping = _friction;
+            sphereRB.AddForce(_driftDir * _actualSpeed, ForceMode.Acceleration);
+            sphereRB.drag = _friction;
 
-            float angle = Vector3.SignedAngle(transform.forward, cc3.normalized, transform.up);
+            float angle = Vector3.SignedAngle(transform.forward, _driftDir.normalized, transform.up);
             if (angle >= -10f && angle <= 10f) // Close to 1 means they are nearly identical
             {
                 isDriffing = false;
+                carAudio.PlaySound(carAudio.engineSound);
+
             }
         }
         else
         {
             sphereRB.AddForce(transform.forward * _actualSpeed, ForceMode.Acceleration);
-            _friction = Mathf.Lerp(_friction, carData.FrictionNormal, Time.deltaTime * 3);
-            sphereRB.linearDamping = _friction;
-
+            _friction = Mathf.Lerp(_friction, FrictionNormal, Time.deltaTime * 3);
+            sphereRB.drag = _friction;
         }
 
-        // apply carData.Gravity
-        sphereRB.AddForce(Vector3.down * carData.Gravity, ForceMode.Acceleration);
+        // apply  Gravity
+        sphereRB.AddForce(Vector3.down * Gravity, ForceMode.Acceleration);
         // steer the car    
 
 
@@ -214,13 +236,46 @@ public class CarController : MonoBehaviour
         // The maximum steering angle is multiplied by the direction of the input
         // and the amount of the input, then multiplied by the steering sensitivity
         // to get the final steering angle
-        return (carData.MaxSteerAngle * steerDir) * steerAmount * carData.SteerSensitivity;
+        return (MaxSteerAngle * steerDir) * steerAmount * SteerSensitivity;
     }
     private bool IsInRangeOfDrift(float angleToCarForwardVector)
     {
-        return Mathf.Abs(angleToCarForwardVector) >= carData.MaxAngleToDrift;
+        return Mathf.Abs(angleToCarForwardVector) >= MaxAngleToDrift;
     }
+    public void SetUpCarData(CarDataType type, CarData customData = null)
+    {
+        switch (type)
+        {
+            case CarDataType.Custom:
+                AttachData(customData);
+                break;
+            case CarDataType.NormalCar:
+                AttachData(NormalPlayerCarData);
 
+                break;
+            case CarDataType.AICar:
+                AttachData(AICarData);
+
+                break;
+            default:
+                break;
+        }
+    }
+    private void AttachData(CarData data)
+    {
+
+        this.MaxSpeed = data.MaxSpeed != 0 ? data.MaxSpeed : 0;
+        this.MaxAngleToDrift = data.MaxAngleToDrift != 0 ? data.MaxAngleToDrift : 0;
+        this.SteerSensitivity = data.SteerSensitivity != 0 ? data.SteerSensitivity : 0;
+        this.DriftTraction = data.DriftTraction != 0 ? data.DriftTraction : 0;
+        // this.MaxSpeed = data.MaxSpeed;
+        // this.MaxAngleToDrift = data.MaxAngleToDrift;
+        this.MaxSteerAngle = data.MaxSteerAngle;
+        // this.SteerSensitivity = data.SteerSensitivity;
+        // this.DriftTraction = data.DriftTraction;
+        // this.FrictionNormal = data.FrictionNormal;
+        // this.DriftFriction = data.DriftFriction;
+    }
 
 
 }

@@ -1,0 +1,63 @@
+{
+  "ignores": [
+    "D:/unity/games/HotSlide/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs",
+    "D:/unity/games/HotSlide/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics.cs",
+    "D:/unity/games/HotSlide/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUI.cs",
+    "D:/unity/games/HotSlide/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs"
+  ],
+  "groups": [
+    [
+      "D:/unity/games/HotSlide/LunaTemp/stage3/processed-scripts/Assets/Joystick Pack/Scripts/Base/Joystick.cs",
+      "D:/unity/games/HotSlide/LunaTemp/stage3/processed-scripts/Assets/Joystick Pack/Scripts/Joysticks/FixedJoystick.cs"
+    ],
+    [
+      "D:/unity/games/HotSlide/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs"
+    ],
+    [
+      "D:/unity/games/HotSlide/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleEPOOutline.cs"
+    ],
+    [
+      "D:/unity/games/HotSlide/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics.cs"
+    ],
+    [
+      "D:/unity/games/HotSlide/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics2D.cs"
+    ],
+    [
+      "D:/unity/games/HotSlide/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleSprite.cs"
+    ],
+    [
+      "D:/unity/games/HotSlide/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUI.cs"
+    ],
+    [
+      "D:/unity/games/HotSlide/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs"
+    ],
+    [
+      "D:/unity/games/HotSlide/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUtils.cs"
+    ],
+    [
+      "D:/unity/games/HotSlide/LunaTemp/stage3/processed-scripts/Assets/Script/AIPathController.cs",
+      "D:/unity/games/HotSlide/LunaTemp/stage3/processed-scripts/Assets/Script/CarController.cs",
+      "D:/unity/games/HotSlide/LunaTemp/stage3/processed-scripts/Assets/Script/GameManager.cs",
+      "D:/unity/games/HotSlide/LunaTemp/stage3/processed-scripts/Assets/Script/FinishLineColider.cs",
+      "D:/unity/games/HotSlide/LunaTemp/stage3/processed-scripts/Assets/Script/GameOverPanel.cs",
+      "D:/unity/games/HotSlide/LunaTemp/stage3/processed-scripts/Assets/Script/CarData.cs",
+      "D:/unity/games/HotSlide/LunaTemp/stage3/processed-scripts/Assets/Script/MoveAndHide.cs",
+      "D:/unity/games/HotSlide/LunaTemp/stage3/processed-scripts/Assets/Script/PlayerController.cs",
+      "D:/unity/games/HotSlide/LunaTemp/stage3/processed-scripts/Assets/Script/LunaJoystick.cs",
+      "D:/unity/games/HotSlide/LunaTemp/stage3/processed-scripts/Assets/Script/CarAudio.cs"
+    ],
+    [
+      "D:/unity/games/HotSlide/LunaTemp/stage3/processed-scripts/Assets/Script/BtnBase.cs",
+      "D:/unity/games/HotSlide/LunaTemp/stage3/processed-scripts/Assets/Script/BtnReset.cs"
+    ],
+    [
+      "D:/6.1.1/pipeline/templates/LunaCompiler/Scripts/Properties/AssemblyInfo.cs"
+    ],
+    [
+      "D:/6.1.1/pipeline/templates/LunaCompiler/Scripts/Sources/OtherDummyScript.cs"
+    ],
+    [
+      "D:/6.1.1/pipeline/templates/LunaCompiler/Scripts/obj/Debug/.NETFramework,Version=v4.7.AssemblyAttributes.cs"
+    ]
+  ]
+}
