@@ -48,7 +48,7 @@ public class GameManager : MonoBehaviour
 
 
 
-    public static UnityEvent OnGameOver = new UnityEvent();
+    public static UnityEvent<bool> OnGameOver = new UnityEvent<bool>();
     void OnEnable()
     {
         OnGameOver.AddListener(HandleOnGameOver);
@@ -58,7 +58,7 @@ public class GameManager : MonoBehaviour
         OnGameOver.RemoveListener(HandleOnGameOver);
     }
 
-    private void HandleOnGameOver()
+    private void HandleOnGameOver(bool isPlayerWin)
     {
         CarController.CanMove = false;
     }

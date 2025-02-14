@@ -2,12 +2,23 @@ using UnityEngine;
 
 public class FinishLineColider : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Car")
+
+        if (other.gameObject.CompareTag("Car") && other.gameObject.transform.parent.Find("Car").TryGetComponent(out PlayerController _))
         {
-            GameManager.OnGameOver.Invoke();
+            GameManager.OnGameOver.Invoke(true);
+        }
+        else
+        {
+            GameManager.OnGameOver.Invoke(false);
+        }
+    }
+    void Update()
+    {
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            GameManager.OnGameOver.Invoke(true);
         }
     }
 

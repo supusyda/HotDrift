@@ -1,35 +1,39 @@
-report@config:load 48.86
+report@config:load 46.52
 Authorized using stored user info.
-report@account:authorize 10.63
+report@account:authorize 9.16
 stderr: 'rm' is not recognized as an internal or external command,
 operable program or batch file.
 
-Exporting assets from Unity........
+Exporting assets from Unity............
 
 [ Stage1 ] Assets exported from Unity and staged for further processing
-report@unity:export 5092.02
-report@config:load 41.00
-Using D:/unity/games/HotSlide/Assets/TextMesh Pro/Fonts/LiberationSans.ttf file to generate an atlas for LiberationSans[24192] font
+report@unity:export 9109.07
+report@config:load 58.73
+Using D:/unity/games/HotSlide/Assets/TextMesh Pro/Fonts/LiberationSans.ttf file to generate an atlas for LiberationSans[24222] font
   Using alphabet  §1234567890-=qwertyuiop[]asdfghjkl;'\`zxcvbnm,./±!@#$%^&*()_+QWERTYUIOP{}ASDFGHJKL:"|~ZXCVBNM<>?
-Combined 97 glyphs into bitmap texture at D:/unity/games/HotSlide/LunaTemp/stage1/tmp/fonts/LiberationSans-24192/output_0.png (56kb)
+Using C:/Windows/Fonts/arial.ttf file to generate an atlas for LegacyRuntime[522] font
+  Using alphabet  §1234567890-=qwertyuiop[]asdfghjkl;'\`zxcvbnm,./±!@#$%^&*()_+QWERTYUIOP{}ASDFGHJKL:"|~ZXCVBNM<>?
+[ error ] $Failed to locate TTF file for the font named LegacyRuntime – falling back to Arial substitute.
+Combined 97 glyphs into bitmap texture at D:/unity/games/HotSlide/LunaTemp/stage1/tmp/fonts/LiberationSans-24222/output_0.png (56kb)
+Combined 97 glyphs into bitmap texture at D:/unity/games/HotSlide/LunaTemp/stage1/tmp/fonts/LegacyRuntime-522/output_0.png (59kb)
 Found custom rules for texture Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
   {"maxWidth":512,"maxHeight":512,"format":"png32","compression":"none","quality":65,"script":"","ext":"","name":"Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset","isOverride":true}
 Found custom rules for texture Resources/unity_builtin_extra/Default-ParticleSystem
   {"maxWidth":512,"maxHeight":512,"format":"png32","compression":"none","quality":65,"script":"","ext":"","name":"Resources/unity_builtin_extra/Default-Particle","isOverride":true}
 Resources:
 {}
-report@assets:stage2 4562.41
-report@assets:stage3 316.16
+report@assets:stage2 4726.30
+report@assets:stage3 321.99
 [ Stage2 ] Assets postprocessed and bundled successfully
-report@config:unity 0.14
-report@config:load 39.33
-report@config:unity 0.11
-report@code:compose 345.71
+report@config:unity 0.43
+report@config:load 50.19
+report@config:unity 1.81
+report@code:compose 292.28
 Authorized using stored user info.
-report@account:authorize 5.21
+report@account:authorize 5.72
 MSBuild version 17.11.9+a69bbaaf5 for .NET Framework
 
-Build started 12/02/2025 22:46:04.
+Build started 13/02/2025 23:23:36.
 
 
 
@@ -98,49 +102,52 @@ GenerateTargetFrameworkMonikerAttribute:
 Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
 
 CoreCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Roslyn\csc.exe /noconfig /nowarn:CS0626,1701,1702 /fullpaths /nostdlib+ /errorreport:prompt /warn:4 /define:UNITY_LUNA;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_2022;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;UNITY_2022_3;UNITY_2022_3_57 /highentropyva+ /reference:D:\6.1.1\pipeline\templates\LunaCompiler\packages\Bridge.Core.17.9.42-luna\lib\net40\Bridge.dll /reference:D:\6.1.1\pipeline\templates\LunaCompiler\packages\Bridge.Html5.17.9.0\lib\net40\Bridge.Html5.dll /reference:D:\6.1.1\pipeline\templates\LunaCompiler\packages\Bridge.WebGL.1.22.0\lib\net40\Bridge.WebGL.dll /reference:D:\6.1.1\pipeline\templates\LunaCompiler\packages\com.unity.cinemachine\2.4.0\Cinemachine.dll /reference:D:\6.1.1\pipeline\templa
-tes\LunaCompiler\packages\DOTween.1.2.705\lib\net40\DOTween.dll /reference:D:\6.1.1\pipeline\templates\LunaCompiler\packages\Bridge.Newtonsoft.Json.1.16.0\lib\net40\Newtonsoft.Json.dll /reference:D:\6.1.1\pipeline\templates\LunaCompiler\packages\Retyped.Core.1.6.6733\lib\net40\Retyped.Core.dll /reference:D:\6.1.1\pipeline\templates\LunaCompiler\packages\Retyped.dom.2.8.6733\lib\net40\Retyped.dom.dll /reference:D:\6.1.1\pipeline\templates\LunaCompiler\packages\Retyped.es5.2.8.6733\lib\net40\Retyped.es5.dll /reference:D:\6.1.1\pipeline\templates\LunaCompiler\packages\Retyped.scripthost.2.8.6733\lib\net40\Retyped.scripthost.dll /reference:D:\6.1.1\pipeline\templates\LunaCompiler\packages\com.unity.textmeshpro\3.0.6\TextMeshPro.dll /reference:D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\Vendor\UnityEngine.dll /reference:D:\6.1.1\pipeline\templates\LunaCompiler\packages\com.unity.ui\1.2.1\UnityEngine.UI.dll /reference:D:\6.1.1\pipeline\templates\LunaCompiler\packages\com.unity.urp\7.6\UnityEngine.UniversalRenderPipeline.dll /debug+ /debug:full /optimize- /out:obj\Debug\UnityScriptsCompiler.dll /subsystemversion:6.00 /target:library /warnaserror- /utf8output /langversion:8 "D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Joystick Pack\Scripts\Base\Joystick.cs" "D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleAudio.cs D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleEPOOutline.cs D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModulePhysics.cs D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModulePhysics2D.cs D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleSprite.cs D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUI.cs D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUnityVersion.cs D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUtils.cs D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\AIPathController.cs D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\BtnBase.cs D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\BtnReset.cs D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\CarAudio.cs D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\CarController.cs D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\CarData.cs D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\FinishLineColider.cs D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\GameManager.cs D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\GameOverPanel.cs D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\LunaJoystick.cs D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\MoveAndHide.cs D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\PlayerController.cs Properties/AssemblyInfo.cs Sources/OtherDummyScript.cs "obj\Debug\.NETFramework,Version=v4.7.AssemblyAttributes.cs"
+  C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Roslyn\csc.exe /noconfig /nowarn:CS0626,1701,1702 /fullpaths /nostdlib+ /errorreport:prompt /warn:4 /define:UNITY_LUNA;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_2022;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NE
+WER;UNITY_2022_3;UNITY_2022_3_57 /highentropyva+ /reference:D:\6.1.1\pipeline\templates\LunaCompiler\packages\Bridge.Core.17.9.42-luna\lib\net40\Bridge.dll /reference:D:\6.1.1\pipeline\templates\LunaCompiler\packages\Bridge.Html5.17.9.0\lib\net40\Bridge.Html5.dll /reference:D:\6.1.1\pipeline\templates\LunaCompiler\packages\Bridge.WebGL.1.22.0\lib\net40\Bridge.WebGL.dll /reference:D:\6.1.1\pipeline\templates\LunaCompiler\packages\com.unity.cinemachine\2.4.0\Cinemachine.dll /reference:D:\6.1.1\pipeline\templates\LunaCompiler\packages\DOTween.1.2.705\lib\net40\DOTween.dll /reference:D:\6.1.1\pipeline\templates\LunaCompiler\packages\Bridge.Newtonsoft.Json.1.16.0\lib\net40\Newtonsoft.Json.dll /reference:D:\6.1.1\pipeline\templates\LunaCompiler\packages\Retyped.Core.1.6.6733\lib\net40\Retyped.Core.dll /reference:D:\6.1.1\pipeline\templates\LunaCompiler\packages\Retyped.dom.2.8.6733\lib\net40\Retyped.dom.dll /reference:D:\6.1.1\pipeline\templates\LunaCompiler\packages\Retyped.es5.2.8.6733\lib\net40\Retyped.es5.dll /reference:D:\6.1.1\pipeline\templates\LunaCompiler\packages\Retyped.scripthost.2.8.6733\lib\net40\Retyped.scripthost.dll /reference:D:\6.1.1\pipeline\templates\LunaCompiler\packages\com.unity.textmeshpro\3.0.6\TextMeshPro.dll /reference:D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\Vendor\UnityEngine.dll /reference:D:\6.1.1\pipeline\templates\LunaCompiler\packages\com.unity.ui\1.2.1\UnityEngine.UI.dll /reference:D:\6.1.1\pipeline\templates\LunaCompiler\packages\com.unity.urp\7.6\UnityEngine.UniversalRenderPipeline.dll /debug+ /debug:full /optimize- /out:obj\Debug\UnityScriptsCompiler.dll /subsystemversion:6.00 /target:library /warnaserror- /utf8output /langversion:8 "D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Joystick Pack\Scripts\Base\Joystick.cs" "D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleAudio.cs D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleEPOOutline.cs D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModulePhysics.cs D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModulePhysics2D.cs D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleSprite.cs D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUI.cs D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUnityVersion.cs D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUtils.cs D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\AIPathController.cs D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\BtnBase.cs D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\BtnReset.cs D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\CarAudio.cs D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\CarController.cs D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\CarData.cs D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\FinishLineColider.cs D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\GameManager.cs D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\GameOverPanel.cs D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\LunaJoystick.cs D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\MoveAndHide.cs D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\PlayerController.cs Properties/AssemblyInfo.cs Sources/OtherDummyScript.cs "obj\Debug\.NETFramework,Version=v4.7.AssemblyAttributes.cs"
 
-D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\PlayerController.cs(6,35): warning CS0649: Field 'PlayerController.fixedJoystick' is never assigned to, and will always have its default value null [D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\GameOverPanel.cs(12,44): warning CS0649: Field 'GameOverPanel.retryButton' is never assigned to, and will always have its default value null [D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
 
+D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\GameOverPanel.cs(10,40): warning CS0649: Field 'GameOverPanel.gameOverPanel' is never assigned to, and will always have its default value null [D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
 D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\CarController.cs(8,39): warning CS0649: Field 'CarController.carAudio' is never assigned to, and will always have its default value null [D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\CarController.cs(9,38): warning CS0649: Field 'CarController.NormalPlayerCarData' is never assigned to, and will always have its default value null [D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-
-D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\GameOverPanel.cs(8,40): warning CS0649: Field 'GameOverPanel.gameOverPanel' is never assigned to, and will always have its default value null [D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
 D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\CarController.cs(10,38): warning CS0649: Field 'CarController.AICarData' is never assigned to, and will always have its default value null [D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
 
 D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\GameManager.cs(21,27): warning CS0649: Field 'GameManager.aiCar' is never assigned to, and will always have its default value null [D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\PlayerController.cs(6,35): warning CS0649: Field 'PlayerController.fixedJoystick' is never assigned to, and will always have its default value null [D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\GameOverPanel.cs(11,39): warning CS0649: Field 'GameOverPanel.finishTxt' is never assigned to, and will always have its default value null [D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\CarController.cs(9,38): warning CS0649: Field 'CarController.NormalPlayerCarData' is never assigned to, and will always have its default value null [D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
 
 D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\GameManager.cs(19,27): warning CS0649: Field 'GameManager.playerCar' is never assigned to, and will always have its default value null [D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\GameManager.cs(43,36): warning CS0414: The field 'GameManager.CustomSteerSensitivityAI' is assigned but its value is never used [D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
 
 D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\GameManager.cs(41,36): warning CS0414: The field 'GameManager.CustomMaxAngleToDriftAI' is assigned but its value is never used [D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
 D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\GameManager.cs(39,36): warning CS0414: The field 'GameManager.CustomSpeedAI' is assigned but its value is never used [D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
 
 D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\GameManager.cs(45,36): warning CS0414: The field 'GameManager.CustomDriftTractionAI' is assigned but its value is never used [D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
 
-D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\GameManager.cs(43,36): warning CS0414: The field 'GameManager.CustomSteerSensitivityAI' is assigned but its value is never used [D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-
   CompilerServer: server - server processed compilation - Scripts
 
 _CopyFilesMarkedCopyLocal:
-  Copying file from "D:\6.1.1\pipeline\templates\LunaCompiler\packages\Bridge.Core.17.9.42-luna\lib\net40\Bridge.dll" to "D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.dll".
-
-  Copying file from "D:\6.1.1\pipeline\templates\LunaCompiler\packages\com.unity.cinemachine\2.4.0\Cinemachine.dll" to "D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Cinemachine.dll".
-  Copying file from "D:\6.1.1\pipeline\templates\LunaCompiler\packages\Bridge.Newtonsoft.Json.1.16.0\lib\net40\Newtonsoft.Json.dll" to "D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Newtonsoft.Json.dll".
   Copying file from "D:\6.1.1\pipeline\templates\LunaCompiler\packages\DOTween.1.2.705\lib\net40\DOTween.dll" to "D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\DOTween.dll".
-
-  Copying file from "D:\6.1.1\pipeline\templates\LunaCompiler\packages\Bridge.WebGL.1.22.0\lib\net40\Bridge.WebGL.dll" to "D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.WebGL.dll".
 
   Copying file from "D:\6.1.1\pipeline\templates\LunaCompiler\packages\Bridge.Html5.17.9.0\lib\net40\Bridge.Html5.dll" to "D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.Html5.dll".
 
-  Copying file from "D:\6.1.1\pipeline\templates\LunaCompiler\packages\Retyped.Core.1.6.6733\lib\net40\Retyped.Core.dll" to "D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.Core.dll".
+  Copying file from "D:\6.1.1\pipeline\templates\LunaCompiler\packages\Bridge.Core.17.9.42-luna\lib\net40\Bridge.dll" to "D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.dll".
+  Copying file from "D:\6.1.1\pipeline\templates\LunaCompiler\packages\Bridge.Newtonsoft.Json.1.16.0\lib\net40\Newtonsoft.Json.dll" to "D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Newtonsoft.Json.dll".
 
-  Copying file from "D:\6.1.1\pipeline\templates\LunaCompiler\packages\Retyped.es5.2.8.6733\lib\net40\Retyped.es5.dll" to "D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.es5.dll".
+  Copying file from "D:\6.1.1\pipeline\templates\LunaCompiler\packages\com.unity.cinemachine\2.4.0\Cinemachine.dll" to "D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Cinemachine.dll".
+
+  Copying file from "D:\6.1.1\pipeline\templates\LunaCompiler\packages\Bridge.WebGL.1.22.0\lib\net40\Bridge.WebGL.dll" to "D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.WebGL.dll".
+
   Copying file from "D:\6.1.1\pipeline\templates\LunaCompiler\packages\Retyped.dom.2.8.6733\lib\net40\Retyped.dom.dll" to "D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.dom.dll".
 
-  Copying file from "D:\6.1.1\pipeline\templates\LunaCompiler\packages\com.unity.textmeshpro\3.0.6\TextMeshPro.dll" to "D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\TextMeshPro.dll".
+  Copying file from "D:\6.1.1\pipeline\templates\LunaCompiler\packages\Retyped.Core.1.6.6733\lib\net40\Retyped.Core.dll" to "D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.Core.dll".
+  Copying file from "D:\6.1.1\pipeline\templates\LunaCompiler\packages\Retyped.es5.2.8.6733\lib\net40\Retyped.es5.dll" to "D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.es5.dll".
 
   Copying file from "D:\6.1.1\pipeline\templates\LunaCompiler\packages\Retyped.scripthost.2.8.6733\lib\net40\Retyped.scripthost.dll" to "D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.scripthost.dll".
+
+  Copying file from "D:\6.1.1\pipeline\templates\LunaCompiler\packages\com.unity.textmeshpro\3.0.6\TextMeshPro.dll" to "D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\TextMeshPro.dll".
 
   Copying file from "D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\Vendor\UnityEngine.dll" to "D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.dll".
 
@@ -152,13 +159,14 @@ _CopyFilesMarkedCopyLocal:
 
   Copying file from "D:\6.1.1\pipeline\templates\LunaCompiler\packages\Bridge.Html5.17.9.0\lib\net40\Bridge.Html5.xml" to "D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.Html5.xml".
 
-  Copying file from "D:\6.1.1\pipeline\templates\LunaCompiler\packages\Bridge.WebGL.1.22.0\lib\net40\Bridge.WebGL.xml" to "D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.WebGL.xml".
-
   Copying file from "D:\6.1.1\pipeline\templates\LunaCompiler\packages\Bridge.Newtonsoft.Json.1.16.0\lib\net40\Newtonsoft.Json.xml" to "D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Newtonsoft.Json.xml".
+
+  Copying file from "D:\6.1.1\pipeline\templates\LunaCompiler\packages\Bridge.WebGL.1.22.0\lib\net40\Bridge.WebGL.xml" to "D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.WebGL.xml".
 
   Copying file from "D:\6.1.1\pipeline\templates\LunaCompiler\packages\Retyped.Core.1.6.6733\lib\net40\Retyped.Core.xml" to "D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.Core.xml".
 
   Copying file from "D:\6.1.1\pipeline\templates\LunaCompiler\packages\Retyped.dom.2.8.6733\lib\net40\Retyped.dom.xml" to "D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.dom.xml".
+
   Copying file from "D:\6.1.1\pipeline\templates\LunaCompiler\packages\Retyped.es5.2.8.6733\lib\net40\Retyped.es5.xml" to "D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.es5.xml".
 
   Copying file from "D:\6.1.1\pipeline\templates\LunaCompiler\packages\Retyped.scripthost.2.8.6733\lib\net40\Retyped.scripthost.xml" to "D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.scripthost.xml".
@@ -191,36 +199,38 @@ Build succeeded.
 
 "D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj" (Rebuild target) (1) ->
 (CoreCompile target) -> 
-  D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\PlayerController.cs(6,35): warning CS0649: Field 'PlayerController.fixedJoystick' is never assigned to, and will always have its default value null [D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\CarController.cs(8,39): warning CS0649: Field 'CarController.carAudio' is never assigned to, and will always have its default value null [D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\GameOverPanel.cs(12,44): warning CS0649: Field 'GameOverPanel.retryButton' is never assigned to, and will always have its default value null [D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\GameOverPanel.cs(10,40): warning CS0649: Field 'GameOverPanel.gameOverPanel' is never assigned to, and will always have its default value null [D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
 
-  D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\CarController.cs(9,38): warning CS0649: Field 'CarController.NormalPlayerCarData' is never assigned to, and will always have its default value null [D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\GameOverPanel.cs(8,40): warning CS0649: Field 'GameOverPanel.gameOverPanel' is never assigned to, and will always have its default value null [D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\CarController.cs(8,39): warning CS0649: Field 'CarController.carAudio' is never assigned to, and will always have its default value null [D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
   D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\CarController.cs(10,38): warning CS0649: Field 'CarController.AICarData' is never assigned to, and will always have its default value null [D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
   D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\GameManager.cs(21,27): warning CS0649: Field 'GameManager.aiCar' is never assigned to, and will always have its default value null [D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\PlayerController.cs(6,35): warning CS0649: Field 'PlayerController.fixedJoystick' is never assigned to, and will always have its default value null [D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\GameOverPanel.cs(11,39): warning CS0649: Field 'GameOverPanel.finishTxt' is never assigned to, and will always have its default value null [D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\CarController.cs(9,38): warning CS0649: Field 'CarController.NormalPlayerCarData' is never assigned to, and will always have its default value null [D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
   D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\GameManager.cs(19,27): warning CS0649: Field 'GameManager.playerCar' is never assigned to, and will always have its default value null [D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\GameManager.cs(43,36): warning CS0414: The field 'GameManager.CustomSteerSensitivityAI' is assigned but its value is never used [D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
   D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\GameManager.cs(41,36): warning CS0414: The field 'GameManager.CustomMaxAngleToDriftAI' is assigned but its value is never used [D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
   D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\GameManager.cs(39,36): warning CS0414: The field 'GameManager.CustomSpeedAI' is assigned but its value is never used [D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
   D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\GameManager.cs(45,36): warning CS0414: The field 'GameManager.CustomDriftTractionAI' is assigned but its value is never used [D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\unity\games\HotSlide\LunaTemp\stage3\processed-scripts\Assets\Script\GameManager.cs(43,36): warning CS0414: The field 'GameManager.CustomSteerSensitivityAI' is assigned but its value is never used [D:\6.1.1\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
 
-    11 Warning(s)
+    13 Warning(s)
     0 Error(s)
 
 
-Time Elapsed 00:00:14.16
+Time Elapsed 00:00:15.22
 
 Source code compiled successfully!
 ﻿
 [ error ] $﻿
 Diagnostics gathered successfully
-report@code:build 23840.83
-report@diagnostics:verify 0.66
-report@diagnostics:upload 2192.72
-report@code:stage 19815.30
+report@code:build 25151.12
+report@diagnostics:verify 0.49
+report@diagnostics:upload 2283.92
+report@code:stage 17986.86
 [ Stage3 ] Code compiled and bundled successfully.
-report@code:bundle 46243.81
-report@package:stage 1635.25
+report@code:bundle 45779.37
+report@package:stage 1646.30
 [ Stage4 ] Target platform: develop
 [ Stage4 ] Package bundled successfully
-report@assets:stats 0.30
+report@assets:stats 0.26

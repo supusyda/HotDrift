@@ -2868,10 +2868,6 @@
                 "excluded": true
             },
             {
-                "name": "Playcanvas.KeyCodesConversions",
-                "excluded": true
-            },
-            {
                 "name": "Playcanvas.PixelFormatHelper",
                 "excluded": true
             },
@@ -3149,10 +3145,6 @@
             },
             {
                 "name": "UnityEngine.Profiling.Profiler",
-                "excluded": true
-            },
-            {
-                "name": "UnityEngine.PropertyHelper",
                 "excluded": true
             },
             {
@@ -5405,7 +5397,7 @@
             },
             {
                 "name": "UnityEngine.FontStyle",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "UnityEngine.ForceMode2D",
@@ -5453,7 +5445,7 @@
             },
             {
                 "name": "UnityEngine.HorizontalWrapMode",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "UnityEngine.HumanBodyBones",
@@ -5565,7 +5557,7 @@
             },
             {
                 "name": "UnityEngine.KeyCode",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "UnityEngine.LegDof",
@@ -6545,7 +6537,7 @@
             },
             {
                 "name": "UnityEngine.TextAnchor",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "UnityEngine.TextClipping",
@@ -7073,7 +7065,7 @@
             },
             {
                 "name": "UnityEngine.VerticalWrapMode",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "UnityEngine.VFX.VFXCameraBufferTypes",
@@ -7672,10 +7664,6 @@
                 "excluded": true
             },
             {
-                "name": "UnityEngine.UI.FontData",
-                "excluded": true
-            },
-            {
                 "name": "UnityEngine.UI.LayoutUtility",
                 "excluded": true
             },
@@ -8157,7 +8145,7 @@
             },
             {
                 "name": "TMPro.FontFeatureLookupFlags",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "TMPro.ITextElement",
@@ -8808,10 +8796,6 @@
                 "excluded": true
             },
             {
-                "name": "DG.Tweening.Plugins.Vector2Plugin",
-                "excluded": true
-            },
-            {
                 "name": "DG.Tweening.Plugins.Vector3ArrayPlugin",
                 "excluded": true
             },
@@ -8829,10 +8813,6 @@
             },
             {
                 "name": "DG.Tweening.Plugins.DoublePlugin",
-                "excluded": true
-            },
-            {
-                "name": "DG.Tweening.Plugins.FloatPlugin",
                 "excluded": true
             },
             {
@@ -9149,7 +9129,7 @@
                     },
                     {
                         "name": "isSeparator",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "isPunctuation",
@@ -17349,7 +17329,7 @@
                     },
                     {
                         "name": "Find",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "FindChild",
@@ -18317,7 +18297,7 @@
                     },
                     {
                         "name": "anchoredPosition#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "anchoredPosition#set",
@@ -19177,7 +19157,7 @@
                     },
                     {
                         "name": "OnCanvasGroupChanged",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Raycast",
@@ -19577,7 +19557,7 @@
                 "instanceMethods": [
                     {
                         "name": "material#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "material#set",
@@ -19585,7 +19565,7 @@
                     },
                     {
                         "name": "fontData#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "fontData#set",
@@ -19593,7 +19573,7 @@
                     },
                     {
                         "name": "mainTexture#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "alignment#get",
@@ -19609,7 +19589,7 @@
                     },
                     {
                         "name": "text#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "font#get",
@@ -19725,7 +19705,7 @@
                     },
                     {
                         "name": "init",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "$ctor1",
@@ -19733,19 +19713,19 @@
                     },
                     {
                         "name": "ctor",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ConfigureForEntity",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Awake",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "OnEnable",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "OnDisable",
@@ -19753,7 +19733,7 @@
                     },
                     {
                         "name": "ApplyFontDataChanges",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "CalculateLayoutInputHorizontal",
@@ -20721,7 +20701,7 @@
                     },
                     {
                         "name": "DoUpdateDelay",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "DoChangeStartValue",
@@ -20799,15 +20779,15 @@
                 "instanceMethods": [
                     {
                         "name": "getDefaultValue",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ctor",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Reset",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "getHashCode",
@@ -20819,7 +20799,7 @@
                     },
                     {
                         "name": "$clone",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -20897,7 +20877,7 @@
                     },
                     {
                         "name": "UpdateDelay",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -24783,19 +24763,19 @@
                     },
                     {
                         "name": "ExtractBlocksRaycast",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "alpha#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "alpha#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "interactable#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "interactable#set",
@@ -24803,7 +24783,7 @@
                     },
                     {
                         "name": "blocksRaycasts#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "blocksRaycasts#set",
@@ -24811,7 +24791,7 @@
                     },
                     {
                         "name": "ignoreParentGroups#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ignoreParentGroups#set",
@@ -24819,15 +24799,15 @@
                     },
                     {
                         "name": "init",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Awake",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "OnEnable",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "OnDisable",
@@ -24835,7 +24815,7 @@
                     },
                     {
                         "name": "AddCanvasGroup",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "RemoveCanvasGroup",
@@ -26137,7 +26117,7 @@
                     },
                     {
                         "name": "text#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "textPreprocessor#get",
@@ -27563,7 +27543,7 @@
                     },
                     {
                         "name": "op_Addition",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "getDefaultValue",
@@ -27571,7 +27551,7 @@
                     },
                     {
                         "name": "xPlacement#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "xPlacement#set",
@@ -27579,7 +27559,7 @@
                     },
                     {
                         "name": "yPlacement#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "yPlacement#set",
@@ -27595,7 +27575,7 @@
                     },
                     {
                         "name": "yAdvance#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "yAdvance#set",
@@ -31935,7 +31915,7 @@
                     },
                     {
                         "name": "To$4",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "To$1",
@@ -31963,7 +31943,7 @@
                     },
                     {
                         "name": "To$11",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "To$13",
@@ -32909,7 +32889,7 @@
                     },
                     {
                         "name": "SetOptions$8",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "SetOptions$12",
@@ -33343,7 +33323,7 @@
                     },
                     {
                         "name": "DOFade",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "DOFade$2",
@@ -33407,7 +33387,7 @@
                     },
                     {
                         "name": "DOAnchorPosY",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "DOAnchorPos3D",
@@ -33549,6 +33529,10 @@
                 "instanceMethods": [
                     {
                         "name": "OnTriggerEnter",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Update",
                         "excluded": false
                     }
                 ]
@@ -34310,6 +34294,228 @@
                     {
                         "name": "HandleGameOver",
                         "excluded": false
+                    },
+                    {
+                        "name": "Start",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.PropertyHelper",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "SetColor",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SetStruct",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SetClass",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "DG.Tweening.Plugins.Vector2Plugin",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "Reset",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SetFrom$1",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SetFrom",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ConvertToStartValue",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SetRelativeEndValue",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SetChangeValue",
+                        "excluded": false
+                    },
+                    {
+                        "name": "GetSpeedBasedDuration",
+                        "excluded": true
+                    },
+                    {
+                        "name": "EvaluateAndApply",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "DG.Tweening.Plugins.FloatPlugin",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "Reset",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SetFrom$1",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SetFrom",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ConvertToStartValue",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SetRelativeEndValue",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SetChangeValue",
+                        "excluded": false
+                    },
+                    {
+                        "name": "GetSpeedBasedDuration",
+                        "excluded": true
+                    },
+                    {
+                        "name": "EvaluateAndApply",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "Playcanvas.KeyCodesConversions",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ToPlaycanvasKeyCode",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ToUnityKeyCode",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.UI.FontData",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "defaultFontData#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "font#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "font#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "fontSize#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "fontSize#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "fontStyle#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "fontStyle#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "bestFit#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "bestFit#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "minSize#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "minSize#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "maxSize#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "maxSize#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "alignment#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "alignment#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "alignByGeometry#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "alignByGeometry#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "richText#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "richText#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "horizontalOverflow#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "horizontalOverflow#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "verticalOverflow#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "verticalOverflow#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "lineSpacing#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "lineSpacing#set",
+                        "excluded": true
                     }
                 ]
             }
